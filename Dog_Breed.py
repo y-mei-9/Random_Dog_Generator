@@ -10,7 +10,7 @@ import os
 import webbrowser
 
 # File Path
-dog_csv_path = "C:\\Users\\ymei9\\Downloads\\Breeds.csv"  # Use double backslash to indicate file path in Windows
+dog_csv_path = "Dogs.csv"  
 # Empty Vars for function
 index = 0
 dog_name = ""
