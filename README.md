@@ -7,4 +7,5 @@ Generate a random dog based on your preferred size group, a short description, a
   4) See an image of the dog.
 
 Data is retrieved from Code.org/thedogapi.com (https://studio.code.org/data_docs/dogs, https://thedogapi.com/)
+
 Contributor(s): Yingyi Mei
