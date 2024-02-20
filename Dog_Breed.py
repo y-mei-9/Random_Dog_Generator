@@ -37,8 +37,7 @@ def sort_size():
 # Parameter (dog_name) is a set
 def generate_description(dog_name):
     global index
-    dog_name_string = dog_name.pop()
-    index = dog_breeds_list.index(dog_name_string)
+    index = dog_breeds_list.index(dog_name)
     print(f"\nThe {dog_name_string} is a {dog_group_list[index].lower()} dog ({short_descriptor_list[index].lower()}). Its typical temperaments are: {temperament_list[index].lower()}.")
 
 # Generates image of the dog
@@ -62,16 +61,16 @@ with open(dog_csv_path, 'r') as file:
 
 sort_size()
 
-# Generates a random breed with a short description base on user preference
+# Generates a random breed with a short description based on user preference
 user_preference = input("Welcome to the Pet Shelter.\nWhat size of dog (XL, L, M, S) would you like?: ").upper()
 if user_preference == "XL":
-    dog_name = {random.choice(xl_dog_list)}
+    dog_name = random.choice(xl_dog_list)
 elif user_preference == "L":
-    dog_name = {random.choice(large_dog_list)}
+    dog_name = random.choice(large_dog_list)
 elif user_preference == "M":
-    dog_name = {random.choice(medium_dog_list)}
+    dog_name = random.choice(medium_dog_list)
 elif user_preference == "S":
-    dog_name = {random.choice(small_dog_list)}
+    dog_name = random.choice(small_dog_list)
 else:
     print("Invalid Input")
 print(f"\nHere is a {user_preference} dog: {dog_name}")
