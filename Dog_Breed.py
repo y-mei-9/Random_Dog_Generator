@@ -66,22 +66,16 @@ sort_size()
 user_preference = input("Welcome to the Pet Shelter.\nWhat size of dog (XL, L, M, S) would you like?: ").upper()
 if user_preference == "XL":
     dog_name = {random.choice(xl_dog_list)}
-    print(f"\nHere is an extra large dog: {dog_name}")
-    generate_description(dog_name)
 elif user_preference == "L":
     dog_name = {random.choice(large_dog_list)}
-    print(f"\nHere is a large dog: {dog_name}")
-    generate_description(dog_name)
 elif user_preference == "M":
     dog_name = {random.choice(medium_dog_list)}
-    print(f"\nHere is a medium dog: {dog_name}")
-    generate_description(dog_name)
 elif user_preference == "S":
     dog_name = {random.choice(small_dog_list)}
-    print(f"\nHere is a small dog: {dog_name}")
-    generate_description(dog_name)
 else:
     print("Invalid Input")
+print(f"\nHere is a {user_preference} dog: {dog_name}")
+generate_description(dog_name)
 
 # Opens an image if the user wishes to see the dog
 see_image = input("Would you like to see an image (Y or N)?: ").upper()
