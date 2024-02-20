@@ -6,7 +6,6 @@
 # Initialize
 import csv
 import random
-import os
 import webbrowser
 
 # File Path
