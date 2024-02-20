@@ -38,7 +38,7 @@ def sort_size():
 def generate_description(dog_name):
     global index
     index = dog_breeds_list.index(dog_name)
-    print(f"\nThe {dog_name_string} is a {dog_group_list[index].lower()} dog ({short_descriptor_list[index].lower()}). Its typical temperaments are: {temperament_list[index].lower()}.")
+    print(f"\nThe {dog_name} is a {dog_group_list[index].lower()} dog ({short_descriptor_list[index].lower()}). Its typical temperaments are: {temperament_list[index].lower()}.")
 
 # Generates image of the dog
 def generate_image():
