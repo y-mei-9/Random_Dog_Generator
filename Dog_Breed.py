@@ -33,7 +33,7 @@ def sort_size():
             small_dog_list.append(dog_breeds_list[i])
 
 # Generates a short description of the dog
-# Parameter (dog_name) is a set
+# Parameter (dog_name) is a string
 def generate_description(dog_name):
     global index
     index = dog_breeds_list.index(dog_name)
